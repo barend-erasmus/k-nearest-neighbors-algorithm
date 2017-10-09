@@ -19,8 +19,8 @@ const data = {
             fizziness: 2
         },
         {
-            sweetness: 5,
-            fizziness: 2
+            sweetness: 2,
+            fizziness: 3
         }
     ],
     softDrink: [
@@ -46,8 +46,8 @@ const data = {
 };
 
 const newData = {
-    sweetness: 8,
-    fizziness: 2
+    sweetness: 6,
+    fizziness: 8
 };
 
 let distances = [];

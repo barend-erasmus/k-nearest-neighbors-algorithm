@@ -22,3 +22,22 @@ Using this dataset we need to classify a new drink(Mountain Dew) which has:
 
 * Sweetness of 6.
 * Fizziness of 8.
+
+We start by calculating the distance to the new data point for each existing point which results in the following.
+
+| Name           | Distance | Type          |
+| -------------- | -------- | ------------- |
+| Fanta          | 1.4142   | Soft Drink    |
+| Coca-Cola      | 2        | Soft Drink    |
+| Monster Energy | 2.236    | Energy Drink  |
+| Red Bull       | 4.123    | Energy Drink  |
+| KeVita         | 6.4031   | Health Drink  |
+| Rum            | 7.2801   | Hard Drink    |
+| Alo Drink      | 7.8102   | Health Drink  |
+| Vodka          | 8.0622   | Hard Drink    |
+
+When using the kNN algorithm we need to specify a k-Factor. This will determine how many of the nearest neighbours are taken into the calculation. In this example we'll use a k-Factor of 3.
+
+We can now calculate the various probabilities by using only the nearest 3 neighbours.
+
+`Soft Drink = \frac{number of Soft Drink items}{k-Factor} =  \frac{2}{3} = 66.66 %

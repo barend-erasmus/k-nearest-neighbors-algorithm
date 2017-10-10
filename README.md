@@ -40,4 +40,4 @@ When using the kNN algorithm we need to specify a k-Factor. This will determine 
 
 We can now calculate the various probabilities by using only the nearest 3 neighbours.
 
-`Soft Drink = \frac{number of Soft Drink items}{k-Factor} =  \frac{2}{3} = 66.66 %
+Soft Drink = \frac{number of Soft Drink items}{k-Factor} =  \frac{2}{3} = 66.66 %

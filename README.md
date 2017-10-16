@@ -39,9 +39,9 @@ We start by calculating the distance to the new data point for each existing poi
 | Vodka          | 8.0622   | Hard Drink    |
 
 
-When using the k-NN algorithm we need to specify a k-Factor. This will determine how many of the nearest neighbours are taken into the calculation. In this example we'll use a k-Factor of 3.
+When using the k-NN algorithm we need to specify a k-Factor. This will determine how many of the nearest neighbors are taken into the calculation. In this example, we'll use a k-Factor of 3.
 
-We can now calculate the various probabilities by using only the nearest 3 neighbours.
+We can now calculate the various probabilities by using only the nearest 3 neighbors.
 
 Soft Drink = number of Soft Drink items / k-Factor = 2 / 3 = 66.66 %
 

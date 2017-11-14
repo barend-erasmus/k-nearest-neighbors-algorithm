@@ -3,7 +3,7 @@
 
 const fs = require('fs');
 
-const rawData = fs.readFileSync('./data/student-mat.csv', 'utf-8');
+const rawData = fs.readFileSync('./src/data/student-mat.csv', 'utf-8');
 
 const lines = rawData.split('\n');
 
@@ -19,12 +19,12 @@ for (let i = 1; i < lines.length; i++) {
         continue;
     }
 
-    const splitedLine = line.split(';').map((x) => x.replace(/['"]+/g, ''));
+    const splittedLine = line.split(';').map((x) => x.replace(/['"]+/g, ''));
 
-    const motherEducation = parseInt(splitedLine[6]);
-    const fatherEducation = parseInt(splitedLine[7]);
+    const motherEducation = parseInt(splittedLine[6]);
+    const fatherEducation = parseInt(splittedLine[7]);
 
-    const wantsHigherEducation = splitedLine[20];
+    const wantsHigherEducation = splittedLine[20];
 
     data[wantsHigherEducation].push({
         motherEducation,

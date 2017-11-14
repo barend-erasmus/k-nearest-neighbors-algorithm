@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<body>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- START -->
+    <div class="container">
+<canvas id="myChart"></canvas>
+ </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+<script>
+
+var ctx = document.getElementById('myChart').getContext('2d');
+var scatterChart = new Chart(ctx, {
+    type: 'scatter',
+    data: {
+        datasets: [
+		{
+            label: 'Energy Drink',
+			borderColor: 'transparent',
+            backgroundColor: 'blue',
+			fill: false,
+            data: [{
+                x: 8,
+                y: 9
+            }, {
+                x: 7,
+                y: 12
+            }]
+        },
+		{
+            label: 'Health Drink',
+			borderColor: 'transparent',
+            backgroundColor: 'red',
+			fill: false,
+            data: [{
+                x: 1,
+                y: 2
+            }, {
+                x: 2,
+                y: 3
+            }]
+        },
+		{
+            label: 'Soft Drink',
+			borderColor: 'transparent',
+            backgroundColor: 'green',
+			fill: false,
+            data: [{
+                x: 4,
+                y: 8
+            }, {
+                x: 5,
+                y: 7
+            }]
+        },
+		{
+            label: 'Hard Drink',
+			borderColor: 'transparent',
+            backgroundColor: 'Black',
+			fill: false,
+            data: [{
+                x: 2,
+                y: 1
+            }, {
+                x: 4,
+                y: 1
+            }]
+        },
+		]
+    },
+    options: {
+    }
+});
+
+</script>
+    <!-- END -->
+</body>
+
+</html>
+
+<!--
+var c = document.getElementById("myChart");
+window.open(c.toDataURL('image/png'));
+-->

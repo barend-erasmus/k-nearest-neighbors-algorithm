@@ -30,7 +30,7 @@ const data = {
         },
         {
             sweetness: 5,
-            fizziness: 8
+            fizziness: 7
         }
     ],
     hardDrink: [
